@@ -56,15 +56,9 @@ h6 {
   text-wrap: balance;
 }
 
-#root,
-#__next {
-  isolation: isolate;
-}
-
 :root {
-  --text-300: #000;
-  --text-200: #a1a1aa;
   --text-100: #d4d4d8;
+  --text-200: #a1a1aa;
 }
 
 html {
@@ -181,6 +175,7 @@ h2 {
 .listitem__description {
   color: var(--text-200);
 }
+
 .duration {
   color: var(--text-200);
   font-weight: 400;
