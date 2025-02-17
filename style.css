@@ -111,6 +111,7 @@ h1 {
   display: flex;
   justify-content: center;
   column-gap: 1.5rem;
+  padding: 0;
 }
 
 .links li {
