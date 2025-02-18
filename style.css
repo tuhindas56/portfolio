@@ -201,3 +201,13 @@ h2 {
     opacity: 1;
   }
 }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+
+  header.shown {
+    bottom: 1rem;
+  }
+}
