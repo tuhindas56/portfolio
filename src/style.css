@@ -180,6 +180,11 @@ h2 {
   text-transform: lowercase;
 }
 
+.experience a {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+}
+
 .projects__container {
   display: grid;
   gap: 2rem;
