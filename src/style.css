@@ -66,7 +66,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   background: #000;
@@ -77,16 +76,24 @@ body {
 
 .app {
   max-width: 1000px;
+  min-width: 0;
 }
 
 header {
   display: none;
-  padding-block: 40px;
+  padding-block: 24px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
 }
-header.shown {
+
+.shown {
   display: block;
-  position: fixed;
   animation: fadein 0.6s ease-in-out;
+}
+
+header li {
+  padding-block: 0.4rem;
 }
 
 a {
@@ -112,24 +119,15 @@ button:hover {
   color: #fff;
 }
 
-section:not(.hero),
+section,
 footer {
-  min-height: 100vh;
   display: grid;
   align-content: center;
-}
-
-section.hero {
-  align-content: center;
-  min-height: 100vh;
-}
-
-h1,
-h2 {
-  color: #fff;
+  padding-block: 8rem;
 }
 
 h1 {
+  color: #fff;
   font-size: 2rem;
 }
 
@@ -182,6 +180,54 @@ h2 {
   text-transform: lowercase;
 }
 
+.projects__container {
+  display: grid;
+  gap: 2rem;
+}
+.project__desc-container h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.project__desc-container p {
+  color: var(--text-200);
+  margin-bottom: 0.75rem;
+}
+.project__links {
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.4rem;
+}
+
+summary {
+  margin-block: 1rem;
+  color: var(--text-200);
+  font-size: 1.2rem;
+  transition: color 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+summary:hover {
+  color: var(--text-100);
+}
+
+.skills .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+button[aria-label="go to top"] {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+button[aria-label="go to top"].shown {
+  display: inline-block;
+}
+
 .footer__description {
   color: var(--text-100);
   margin-bottom: 2rem;
@@ -205,9 +251,5 @@ h2 {
 @media (max-width: 1024px) {
   html {
     font-size: 14px;
-  }
-
-  header.shown {
-    bottom: 1rem;
   }
 }

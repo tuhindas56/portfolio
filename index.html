@@ -1,137 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuhin Das</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuhin Das</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="app">
+  <div class="app">
 
-        <header>
-            <ul class="links">
-                <li>
-                    <button data-id="experience">Experience</button>
-                </li>
-                <li>
-                    <button data-id="skills">Skills</button>
-                </li>
-                <li>
-                    <button data-id="education">Education</button>
-                </li>
-                <li>
-                    <button data-id="contact">Contact</button>
-                </li>
+    <header>
+      <ul class="links">
+        <li>
+          <button data-id="experience">Experience</button>
+        </li>
+        <li>
+          <button data-id="projects">Projects</button>
+        </li>
+        <li>
+          <button data-id="skills">Skills</button>
+        </li>
+        <li>
+          <button data-id="education">Education</button>
+        </li>
+        <li>
+          <button data-id="contact">Contact</button>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Tuhin Das</h1>
+        <p class="role">Web Developer</p>
+        <p class="description">A junior developer that loves turning ideas into clean, responsive websites.</p>
+        <ul class="links">
+
+          <li>
+            <a href="https://github.com/tuhindas56" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/tuhindas56" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          </li>
+          <li>
+            <a href="mailto:tuhindas56dev@gmail.com">Email</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <ul class="list">
+          <li>
+            <h3 class="listitem__heading">Web Developer, Ozibook <span class="duration">(Sept 2024 -
+                Present)</span></h3>
+            <ul class="listitem__description">
+              <li>Developed and maintained 11 client websites using WIX and WordPress.</li>
+              <li>Implemented custom solutions with HTML, CSS, JavaScript and WIX Velo.</li>
+              <li>Worked closely with UI/UX designers to translate designs into functional, user-friendly websites.</li>
+              <li>Communicated project updates and gathered client feedback in regular meetings to ensure satisfaction.
+              </li>
             </ul>
-        </header>
+          </li>
+        </ul>
+      </section>
 
-        <main>
-            <section class="hero">
-                <h1>Tuhin Das</h1>
-                <p class="role">Web Developer</p>
-                <p class="description">A junior developer that loves turning ideas into clean, responsive websites.</p>
-                <ul class="links">
-                    <li>
-                        <button data-id="experience">Experience</button>
-                    </li>
-                    <li>
-                        <button data-id="skills">Skills</button>
-                    </li>
-                    <li>
-                        <button data-id="education">Education</button>
-                    </li>
-                    <li>
-                        <a href="https://github.com/tuhindas56" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/tuhindas56" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                    </li>
-                    <li>
-                        <a href="mailto:tuhindas56dev@gmail.com">Email</a>
-                    </li>
-                </ul>
-            </section>
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects__container">
 
-            <section class="experience">
-                <h2>Experience</h2>
-                <ul class="list">
-                    <li>
-                        <h3 class="listitem__heading">Web Developer, Ozibook <span class="duration">(Sept 2024 -
-                                Present)</span></h3>
-                        <p class="listitem__description">Working on responsive websites for
-                            clients. Worked on eleven client projects, focusing on functionality and user experience.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
-
-            <section class="skills">
-                <h2>Skills</h2>
-                <ul class="list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Tailwind CSS</li>
-                    <li>JavaScript / TypeScript</li>
-                    <li>ReactJS</li>
-                    <li>Jest / Vitest</li>
-                    <li>ViteJS / Webpack</li>
-                    <li>WIX / WordPress</li>
-                    <li>SQL</li>
-                    <li>Figma</li>
-                </ul>
-            </section>
-
-            <section class="education">
-                <h2>Education</h2>
-                <ul class="list">
-                    <li class="listitem">
-                        <h3 class="listitem__heading">Full Stack JavaScript, The Odin Project</h3>
-                        <p class="listitem__description">Jan 2024
-                            - Present</p>
-                    </li>
-                    <li class="listitem">
-                        <h3 class="listitem__heading">Post Graduate Diploma in Computer Applications, Computer Education
-                            Center</h3>
-                        <p class="listitem__description">July 2023
-                            - Jan 2024</p>
-                    </li>
-                    <li class="listitem">
-                        <h3 class="listitem__heading">Bachelor of Commerce, Gauhati University</h3>
-                        <p class="listitem__description">Apr 2020
-                            - June 2023</p>
-                    </li>
-            </section>
-
-        </main>
-
-        <footer class="contact">
-            <h2>Get in Touch</h2>
-            <p class="footer__description">I'm always open to new opportunities and collaborations. Feel free to reach
-                out
-                through any of the channels below.</p>
-            <div class="footer__links">
-                <a href="https://linkedin.com/tuhindas56" aria-label="Linkedin" class="footer__link">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="mailto:tuhindas56dev@gmail.com" aria-label="Email" class="footer__link
-                ">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
+          <div class="project">
+            <div class="project__desc-container">
+              <h3>To-do list</h3>
+              <p>A responsive and elegant to-do list</p>
+              <div class="project__links">
+                <a href="https://tuhindas56.github.io/top-todo-list/" aria-label="live demo" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                <a href="https://github.com/tuhindas56/top-todo-list" aria-label="source code" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
-        </footer>
-    </div>
+          </div>
 
+          <div class="project">
+            <div class="project__desc-container">
+              <h3>Weather App</h3>
+              <p>A weather forecast site displaying data from an API</p>
+              <div class="project__links">
+                <a href="https://tuhindas56.github.io/top-weather-app/" aria-label="live demo" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                <a href="https://github.com/tuhindas56/top-weather-app" aria-label="source code" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__desc-container">
+              <h3>CV Builder</h3>
+              <p>A CV builder built with ReactJS</p>
+              <div class="project__links">
+                <a href="https://top-cv-application-coral.vercel.app/" aria-label="live demo" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                <a href="https://github.com/tuhindas56/top-cv-application" aria-label="source code" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__desc-container">
+              <h3>Amazon clone</h3>
+              <p> A UI clone of Amazon built with CSS</p>
+              <div class="project__links">
+                <a href="https://tuhindas56.github.io/amazon-clone/" aria-label="live demo"><i
+                    class="fa-solid fa-square-arrow-up-right" target="_blank" rel="noopener noreferrer"></i></a>
+                <a href="https://github.com/tuhindas56/amazon-clone" aria-label="source code" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul class="list">
+          <li class="listitem__heading">HTML</li>
+          <li class="listitem__heading">CSS</li>
+          <li class="listitem__heading">Tailwind CSS</li>
+          <li class="listitem__heading">JavaScript / TypeScript</li>
+          <li class="listitem__heading">ReactJS</li>
+          <li class="listitem__heading">Jest / Vitest</li>
+          <li class="listitem__heading">ViteJS / Webpack</li>
+          <li class="listitem__heading">SQL</li>
+          <li class="listitem__heading">Framer / WIX / WordPress</li>
+          <li class="listitem__heading">Figma</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <ul class="list">
+          <li class="listitem">
+            <h3 class="listitem__heading">Full Stack JavaScript, The Odin Project</h3>
+            <p class="listitem__description">Jan 2024
+              - Present</p>
+          </li>
+          <li class="listitem">
+            <h3 class="listitem__heading">Post Graduate Diploma in Computer Applications, Computer Education
+              Center</h3>
+            <p class="listitem__description">July 2023
+              - Jan 2024</p>
+          </li>
+          <li class="listitem">
+            <h3 class="listitem__heading">Bachelor of Commerce, Gauhati University</h3>
+            <p class="listitem__description">Apr 2020
+              - June 2023</p>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="contact">
+      <h2>Get in Touch</h2>
+      <p class="footer__description">I'm always open to new opportunities and collaborations. Feel free to reach
+        out
+        through any of the channels below.</p>
+      <div class="footer__links">
+        <a href="https://linkedin.com/tuhindas56" aria-label="Linkedin" class="footer__link">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:tuhindas56dev@gmail.com" aria-label="Email" class="footer__link
+              ">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <button aria-label="go to top"><i class="fa-solid fa-circle-up"></i></button>
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
