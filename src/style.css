@@ -187,12 +187,14 @@ h2 {
 
 .projects__container {
   display: grid;
-  gap: 2rem;
 }
 .project__desc-container h3 {
   font-size: 1.25rem;
   color: #fff;
   margin-bottom: 0.75rem;
+}
+.project {
+  margin-bottom: 2rem;
 }
 .project__desc-container p {
   color: var(--text-200);
