@@ -1,13 +1,19 @@
 import "./style.css"
 
 const header = document.querySelector("header") as HTMLElement
-const buttons = document.querySelectorAll(".links button") as NodeListOf<HTMLButtonElement>
+const buttons = document.querySelectorAll(
+  ".links button"
+) as NodeListOf<HTMLButtonElement>
 const hero = document.querySelector("section.hero") as HTMLElement
-const goToTop = document.querySelector('button[aria-label="go to top"]') as HTMLButtonElement
+const goToTop = document.querySelector(
+  'button[aria-label="go to top"]'
+) as HTMLButtonElement
 
-buttons.forEach((button) => {
+buttons.forEach(button => {
   button.onclick = () => {
-    const destination = document.querySelector(`.${button.dataset.id}`) as HTMLElement
+    const destination = document.querySelector(
+      `.${button.dataset.id}`
+    ) as HTMLElement
 
     destination.scrollIntoView({
       behavior: "smooth",
@@ -18,14 +24,9 @@ buttons.forEach((button) => {
 })
 
 const heroCallback = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      header.classList.remove("shown")
-      goToTop.classList.remove("shown")
-    } else {
-      header.classList.add("shown")
-      goToTop.classList.add("shown")
-    }
+  entries.forEach(entry => {
+    header.classList.toggle("shown", !entry.isIntersecting)
+    goToTop.classList.toggle("shown", !entry.isIntersecting)
   })
 }
 
