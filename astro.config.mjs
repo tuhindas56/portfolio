@@ -14,20 +14,21 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
-      name: "PT Sans",
-      cssVariable: "--font-pt-sans",
+      name: "Outfit",
+      cssVariable: "--font-sans",
+      weights: ["200", "400", "500"],
       fallbacks: ["sans-serif"]
     },
     {
       provider: fontProviders.fontsource(),
-      name: "Lora",
-      cssVariable: "--font-lora",
+      name: "Libre Baskerville",
+      cssVariable: "--font-serif",
       fallbacks: ["serif"]
     },
     {
       provider: fontProviders.fontsource(),
       name: "JetBrains Mono",
-      cssVariable: "--font-jetbrains-mono",
+      cssVariable: "--font-mono",
       fallbacks: ["monospace"]
     }
   ]

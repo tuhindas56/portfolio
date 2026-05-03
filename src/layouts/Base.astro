@@ -1,5 +1,9 @@
 ---
 import { Font } from "astro:assets"
+import Image from "astro/components/Image.astro"
+import Header from "@/lib/components/header.astro"
+import Footer from "@/lib/components/footer.astro"
+import ParkImage from "@/lib/assets/images/park.png"
 import "../styles/global.css"
 ---
 
@@ -10,13 +14,21 @@ import "../styles/global.css"
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <Font cssVariable="--font-lora" preload />
-    <Font cssVariable="--font-pt-sans" preload />
-    <Font cssVariable="--font-jetbrains-mono" preload />
+    <Font cssVariable="--font-sans" preload />
+    <Font cssVariable="--font-serif" preload />
+    <Font cssVariable="--font-mono" preload />
   </head>
-  <body class="flex flex-col items-center p-16 font-serif">
-    <div class="w-lg">
-      <slot />
+  <body class="font-sans bg-bg text-fg leading-loose">
+    <Header />
+
+    <div class="w-2xl mx-auto mt-8">
+      <Image src={ParkImage} alt="" />
     </div>
+
+    <main class="w-2xl mx-auto flex flex-col gap-8 mt-8">
+      <slot />
+    </main>
+
+    <Footer />
   </body>
 </html>
