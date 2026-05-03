@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans), sans-serif;
+  --font-serif: var(--font-serif), serif;
+  --font-mono: var(--font-mono), monospace;
+  --color-fg: var(--color-fg);
+  --color-bg: var(--color-bg);
+}
+
+:root {
+  --color-bg: hsl(240, 2%, 9%);
+  --color-fg: hsl(220, 18%, 88%);
+}
+
+a {
+  @apply hover:text-mist-400;
+}
+
+.link {
+  @apply text-mist-400;
+}
+
+p:not(:last-child) {
+  @apply mb-4;
+}
