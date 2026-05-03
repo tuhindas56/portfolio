@@ -18,14 +18,19 @@ import "../styles/global.css"
     <Font cssVariable="--font-serif" preload />
     <Font cssVariable="--font-mono" preload />
   </head>
-  <body class="font-sans bg-bg text-fg leading-loose">
+  <body class="font-sans bg-bg text-fg leading-loose px-8">
     <Header />
 
-    <div class="w-2xl mx-auto mt-8">
-      <Image src={ParkImage} alt="" />
+    <div class="max-w-2xl mx-auto mt-8">
+      <Image
+        src={ParkImage}
+        alt=""
+        width={700}
+        class="min-h-20 object-cover object-left"
+      />
     </div>
 
-    <main class="w-2xl mx-auto flex flex-col gap-8 mt-8">
+    <main class="max-w-2xl mx-auto flex flex-col gap-8 mt-8">
       <slot />
     </main>
 
